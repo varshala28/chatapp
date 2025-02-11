@@ -1,0 +1,122 @@
+.ls {
+    background: linear-gradient(to bottom, #50257A, #311D58); /* Purple gradient matching login form */
+    color: white;
+    height: 75vh;
+}
+.ls-top {
+    padding: 25px;
+}
+.ls-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ls-nav .logo {
+    max-width: 140px;
+}
+.ls-nav .menu img {
+    max-height: 20px;
+    opacity: 0.7; /* Slightly enhanced visibility */
+    cursor: pointer;
+}
+.ls-search {
+    background-color: #5A4B90; /* Brighter and lighter purple for search bar */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.ls-search img {
+    width: 16px;
+}
+.ls-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 11px;
+}
+.ls-search input::placeholder {
+    color: #d3cde6; /* Light lavender for placeholder */
+}
+.ls-list {
+    display: flex;
+    height: 71%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 10px; /* Add space between chat boxes */
+    padding: 10px; /* Add inner padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in the element's total size */
+}
+.ls-list img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #503580; /* Balanced purple between #452A6A and #5A4B90 */
+    border-radius: 9px;
+    transition: background-color 0.3s ease;
+}
+.friends img {
+    width: 42px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.friends div {
+    display: flex;
+    flex-direction: column;
+}
+.friends span {
+    color: #b5b1d5; /* Light lavender for secondary text */
+    font-size: 11px;
+}
+.friends:hover {
+    background-color: #5A3B85; /* Brighter hover effect for better feedback */
+}
+.friends:hover span {
+    color: white;
+}
+.ls-nav .menu {
+    position: relative;
+    padding: 10px 0px;
+}
+.menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 130px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #50257A; /* Purple tone for submenu */
+    color: white;
+    display: none;
+}
+.sub-menu hr {
+    border: none;
+    height: 1px;
+    background: #7A6AA8; /* Light purple separator */
+    margin: 8px 0px;
+}
+.sub-menu p {
+    cursor: pointer;
+    font-size: 14px;
+}
+.menu:hover .sub-menu {
+    display: block;
+}
+.friends.border img {
+    border: 3px solid #6A5AE8; /* Light blue accent for active friend */
+}
+.friends.border div span {
+    color: #6A5AE8; /* Matching light blue for active friend text */
+}

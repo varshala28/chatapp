@@ -1,0 +1,78 @@
+.login{
+    min-height: 100vh;
+    background: url(/backk.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login.logo{
+    width: max(20vw,20px);
+}
+.login-form{
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px 30px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px ;
+}
+
+.login-form h2{
+    font-weight: 500;
+    color: #003d66;
+}
+
+.form-input{
+    padding: 8px 10px ;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    outline-color: #077EFF;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #003d66; 
+    color: white;
+    font-size: 16px;
+    border: 2px solid transparent; /* Set initial border to transparent */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.login-form button:hover {
+    background-color: #005a99; /* Lighter blue on hover */
+    border-color: #005a99;
+}
+
+.login-term{
+    display:flex;
+    gap:5px;
+    font-size: 12px;
+    color: #808080;
+}
+.login-forgot{
+    display:flex;
+    gap:5px;
+    flex-direction: column;
+}
+.login-toggle{
+    font-size: 13px;
+    color: #5c5c5c;
+}
+.login-toggle span{
+    font-weight: 500;
+    color:#077EFF;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .login{
+        flex-direction: column;
+        justify-content: center;
+        gap:30px;
+    }
+}

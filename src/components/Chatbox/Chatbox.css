@@ -1,0 +1,153 @@
+.chat-box{
+    height: 75vh;
+    position: relative;
+    background-color: #e0d2ff; /* Lighter vibrant background */
+}
+
+.chat-user{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #bfaaff; /* Light purple border */
+}
+
+.chat-user img{
+    width: 25px;
+    border-radius: 50%;
+}
+
+.chat-user img:first-child{
+    width:38px;
+    aspect-ratio: 1/1;
+}
+
+.chat-user p{
+    flex: 1;
+    font-weight: 500;
+    font-size: 20px;
+    color: #7a3e99; /* Vibrant purple text */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chat-input{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.chat-input img{
+    width: 30px;
+    cursor: pointer;
+}
+.chat-input label{
+    display: flex;
+}
+.chat-input label img{
+    width: 22px;
+}
+.chat-input input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.chat-msg{
+    height: calc(100% - 70px);
+    padding-bottom: 50px;
+    overflow-y: scroll; 
+    display: flex;  
+    flex-direction: column-reverse;
+}
+.s-msg div img,.r-msg div img{
+    width: 27px;        
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+}
+.s-msg,.r-msg{
+    display: flex;      
+    align-items: end;
+    justify-content: end;
+    gap: 5px;
+    padding: 0px 15px;
+}
+
+.r-msg{
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.msg{
+    color:white;
+    background-color: #9b4bdb; /* Vibrant purple background for messages */
+    padding: 8px;
+    font-size: 11px;
+    font-weight: 300;
+    max-width: 200px;
+    border-radius: 8px 8px 0px 8px;
+    margin-bottom: 30px;
+}
+.r-msg .msg{
+    border-radius: 8px 8px 8px 0px;
+
+}
+.s-msg div,.r-msg div{
+    text-align: center;
+    font-size: 9px;
+}
+.msg-img{
+    max-width: 230px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+}
+.chat-Welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(145deg, #8EC5FC, #E0C3FC); /* Light blue-to-purple gradient */
+    color: #2E2E2E; /* Darker text for contrast */
+    border-radius: 12px; /* Smooth and rounded edges */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for a polished look */
+    padding: 20px; /* Add some breathing space inside the box */
+}
+
+
+
+.chat-Welcome img{
+    width:60px;
+}
+
+.chat-Welcome p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #9b4bdb; /* Same vibrant purple for welcome text */
+}
+
+/* Modify the button color to match the purple theme */
+.chat-input button {
+    background-color: #9b4bdb; /* Vibrant purple background for the button */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hover effect for buttons */
+.chat-input button:hover {
+    background-color: #7a3e99; /* Darker vibrant purple on hover */
+}
+
+/* Optional: Purple variant for border styling */
+.chat-user {
+    border-bottom: 1px solid #bfaaff; /* Light purple border */
+}

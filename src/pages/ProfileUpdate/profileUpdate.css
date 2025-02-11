@@ -1,0 +1,65 @@
+.profile{
+    min-height:100vh;
+    background: url(/backk.png) no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container{
+    background: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 700px;
+    border-radius: 10px;
+}
+.profile-pic{
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.pro-pro{
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    margin: 5px auto;
+    border-radius: 30%;
+}
+.profile form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding:40px;
+}
+.profile form h3{
+    font-weight: 500;
+}
+.profile label{
+    display:flex;
+    align-items: center;
+    color:gray;
+    cursor: pointer;
+    gap: 10px;
+}
+.profile label img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+}
+.profile input textarea{
+    padding:10px;
+    outline-color: #6A0DAD; 
+    border:1px solid #c9c9c9;
+    min-width: 300px;
+}
+.profile form button{
+    border:none;
+    color:white;
+    background-color: #6A0DAD; 
+    padding:8px;
+    font-size: 16px;
+    cursor: pointer;
+}
