@@ -1,4 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
+import  { useContext, useState, useEffect } from "react";
+import React from "react";
 import "./chat.css";
 import Rightsidebar from "../../components/Rightsidebar/Rightsidebar";
 import Leftsidebar from "../../components/Leftsidebar/Leftsidebar";
